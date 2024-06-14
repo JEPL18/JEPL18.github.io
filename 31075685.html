@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Configuración del Sistema</title>
+<link rel="stylesheet" type="text/css" href="31075685.css">
+</head>
+<body>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  .slider:hover {
+    opacity: 1;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<h2>Configuración del Sistema</h2>
+
+<label for="brillo">Brillo:</label>
+<input type="range" id="brillo" name="brillo" min="0" max="100" class="slider">
+
+<label for="volumen">Volumen:</label>
+<input type="range" id="volumen" name="volumen" min="0" max="100" class="slider">
+
+<div>
+  <input type="checkbox" id="temas" name="temas">
+  <label for="temas">Activar temas para el sistema</label>
+</div>
+
+<div>
+  <input type="checkbox" id="filtro_oscuro" name="filtro_oscuro">
+  <label for="filtro_oscuro">Usar filtro oscuro</label>
+</div>
+
+</body>
+</html>
